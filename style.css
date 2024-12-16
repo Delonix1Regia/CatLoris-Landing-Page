@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #f1eee9;
-  --secondary-color: #f54725;
+  --secondary-color: #9AA6B2;
   --tertiary-color: #f9d678;
   --text-dark: #13313c;
   --text-light: #475569;
@@ -316,7 +316,7 @@ img {
     background-size: 1300px 50px;
     background-repeat: repeat-y;
     background-position: top center;
-    background-color: #f9f9f9; /* Sesuai tema services */
+    background-color: #7AB2D3; 
     padding: 50px 0;
     position: relative;
 }
@@ -414,7 +414,7 @@ img {
 
 #team {
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: #B9E5E8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -568,7 +568,7 @@ img {
   
   .icon-download {
     max-height: 50px;
-    margin-right: 20px;
+    margin-left: 20px;
     transition: transform 0.3s ease;
   }
   
@@ -577,131 +577,130 @@ img {
   }
 
   /* Footer Style */
-#footer {
-    background-color: #fff;
-    color: #fff;
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
-  
-  .footer-area .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-logo img {
-    max-width: 100%;
-  }
-  
-  .widget {
+/* Styling untuk footer */
+.footer-area {
+    position: relative;
+    padding: 150px 0 0;
+    background: #fff;
+}
+
+.section-padding {
+    padding: 25px 0;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* Widget (logo dan deskripsi) */
+.widget {
     margin-bottom: 30px;
-  }
-  
-  .widget h3.footer-logo {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  
-  .textwidget p {
-    font-size: 16px;
+}
+
+.footer-logo img {
+    width: 190px;
+    height: auto;
+}
+
+.textwidget p {
+    margin-top: 10px;
+    font-size: 14px;
     line-height: 1.5;
-    color: #ccc;
-  }
-  
-  .footer-titel {
-    font-size: 20px;
+}
+
+/* Title untuk Supported by, Contact */
+.footer-titel {
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .support img {
-    margin-right: 20px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-  }
-  
-  .support img:hover {
-    transform: scale(1.1);
-  }
-  
-  .address {
-    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* Supported by section */
+.support {
     padding: 0;
-  }
-  
-  .address li {
-    margin-bottom: 15px;
-  }
-  
-  .address a {
-    color: #ccc;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* Untuk rata kiri */
+    gap: 20px;
+    
+}
+
+.support li {
+    margin: 0;
+}
+
+.support img {
+    width: 90px; /* Sesuaikan ukuran gambar */
+    height: auto;
+    margin-bottom: 88px;
+}
+
+/* Contact section */
+.address {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.address li {
+    margin-bottom: 10px;
+}
+
+.address a {
     text-decoration: none;
-    font-size: 16px;
+    color: #333;
+    font-size: 14px;
     display: flex;
     align-items: center;
-  }
-  
-  .address a:hover {
-    color: #f1f1f1;
-  }
-  
-  .address i {
+}
+
+.address i {
     margin-right: 10px;
-  }
-  ~
-  #copyright {
-    background-color: #fff;
+}
+
+/* Copyright */
+#copyright {
     padding: 20px 0;
     text-align: center;
-    color: #ccc;
-  }
-  
-  #copyright p {
+}
+
+#copyright p {
+    margin: 0;
     font-size: 14px;
-  }
-  
-  #copyright a {
-    color: #f1f1f1;
+    color: #333;
+}
+
+#copyright a {
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
-  }
-  
-  #copyright a:hover {
-    color: #ff9800;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-area .container {
-      padding-left: 15px;
-      padding-right: 15px;
+}
+
+#copyright a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 991px) {
+    .footer-area .container .row {
+        flex-direction: column;
+        align-items: center;
     }
-  
-    .row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
+    .footer-area .container .row .col-lg-4 {
+        margin-bottom: 30px;
     }
-  
-    .col-lg-4, .col-md-6, .col-sm-12, .col-xs-12 {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-  
-    .footer-titel {
-      text-align: center;
-    }
-  
+
     .support {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+        justify-content: center; /* Agar gambar rata tengah pada layar kecil */
     }
-  
-    .support li {
-      margin-right: 20px;
+
+    .address a {
+        font-size: 16px;
     }
-  }
-  
+}
+
   
   @media (max-width: 768px) {
     .row {
@@ -1215,6 +1214,7 @@ hr {
     position: relative;
     overflow: hidden;
     padding: 100px 0 0px;
+    background-color: #fff;
 }
 
 #download-area .download-area-bg {
@@ -1234,9 +1234,12 @@ hr {
 
 
 #download-area .contents .header-button {
-    margin-top: 20px;
-    color: #222222;
+    text-align: right; /* Menempatkan konten di sisi kanan */
+    display: flex; 
+    justify-content: flex-end; 
+    margin-right: 20px;
 }
+
 
 #download-area .contents .header-button .btn {
     margin-right: 10px;

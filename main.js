@@ -66,3 +66,5 @@ prev.addEventListener("click", () => {
         wrapper.style.transform = `translateX(${currentPosition}px)`;
     }
 });
+
+
